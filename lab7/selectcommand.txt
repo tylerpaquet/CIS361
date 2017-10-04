@@ -1,0 +1,1 @@
+ls | bash select.sh | wc -l

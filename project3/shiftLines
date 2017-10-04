@@ -1,0 +1,13 @@
+#!/bin/bash
+while read line
+do
+	set $line
+	head=$1
+	for i in $*
+	do
+		shift
+		echo $* $head
+		head="$head $1"
+		
+	done
+done < test.dat 
